@@ -1,6 +1,6 @@
-To be completely honest I feel like I have never learnt any programming language to the fullest and being that I wanted to be a machine learning engineer, the only place to start is Python. I will be mentioning all the materials
-that were used in this prep and also the content learnt in the prep notes on a daily basis.
-
-I am starting my python journey with two books LEARN PYTHON THE HARD WAY Third Edition and Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming
+To be completely honest I feel like I have never learnt any programming language to the fullest and being that I wanted to be a machine learning engineer, the only place to start is Python. I will be mentioning all the materials that were used in this prep and also the content learnt in the prep notes on a daily basis.
+Before starting I would like to mention that this prep might be be useful for people who prefer to read books but at the same time refer to video lectures.
+I am starting my python journey with two books LEARN PYTHON THE HARD WAY Third Edition and Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming but at the same time watching the MIT 6.00 Introduction to Computer Science and Programming, Fall 2008 lecture in youtube.
 
 And I feel like I need to be completely honest with myself and the people who might read this in the future, I started this journey by deleting twitter and instagram and any other app that might distract from achieving whatever it is that I want.
+Happy Learning
