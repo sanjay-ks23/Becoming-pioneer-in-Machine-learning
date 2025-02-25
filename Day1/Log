@@ -1,0 +1,29 @@
+Time: 14:14, Day: 25-02-25.  I am starting with Book 1.
+This book has 52 main Exercises and 15 more minor exercises, I would like to suggest draft a plan that works best for you and stick according to it, 
+This is what I have started off with, I am planning on reading 5 main chapters and then a watch a single lecture form MIT, I have chosen MIT because right form my schooling I have always prefered MIT lectures.
+
+Started of with the Setup.
+Even though I have predominantly used vscode for all coding, I want to follow everything this brothers says so I went on to download and install the atom text editor.
+The first exercise simply talks about the usage of terminals and a hello world code.
+The second exercise goes into the world of comments and pound characters
+Moving on to the third exercise, we get into Numbers and math, and I completely forgot, % gives us the remainder of the division.
+exercise 4: Variables, I learnt one thing from this, it is bad form to write variable=value, and it is prefered to write it as variable = value
+exercise 5: print(f"My name is {variable_name}, if variable_name was previously defined as Sanjay i.e, varibale_name = 'Sanjay'
+Strings are always defined under quotes.
+
+I wrote this basic code from this exercise :
+my_name = 'Sanjay Kuppusamy Saravanan'
+age = 22
+weight = 65
+height = 170
+print(f"My name is {my_name}")
+bmi = (weight*weight)/height
+print(f"Knowing my height and weight is {height} and {weight} respectively, my bmi would be {round(bmi)}")
+
+Now the time is 15:09 and I am moving onto the video lecture: there are a total of 24 lectures in this course and each course is around 45 minutes.
+It is titled as Introduction to Computer Science and Programming, Fall 2008
+
+the instructor talked a bit about himself and then moved onto the goals: help prepare the freshman and sophmores, to help them with programing
+This course is for people who are just starting to enter into the coding scene.
+
+computation: 
