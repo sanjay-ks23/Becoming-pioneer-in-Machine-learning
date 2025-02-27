@@ -138,10 +138,13 @@ script, filename1, filename2 = argv
 #first we read contents from filename1
 text = open(filename1)
 print("the content that needs to be moved is as follows\n", text.read())
+text.seek(0)
 moving = text.read()
 
 #print(f"does the file exist {exists{filename2}}")
 #print("if yes then we omve the content else press Ctrl-C")
+input()
+
 txt = open(filename2, 'w')
 txt.write(moving)
 
