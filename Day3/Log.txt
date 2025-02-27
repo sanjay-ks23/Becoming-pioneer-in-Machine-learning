@@ -76,6 +76,82 @@ new_txt = open(file_name)
 print("The content is the same as we are just calling the same file again")
 print(new_txt.read())
 I am just going to save this and take a five min break.
+in this exercise we get introduced to open(file_name) and file_name.read()
+the reason why one is inside the () and the other is called as .read() is that , read is a function the given file has to do or in other words it is a command given to the file.
+whereas using open we we create somehting called a file object, something similar to a video player, it holds the dvd which has the content but it cannot run on itself, no self sustaining capabilities.
+we have to use close() on the text and new_txt variables once we are done with them.
+by simple typing text.close() at the end of the file/script.
+Next exercise, Reading and writing files.
+we get bombarded with a list of commands, which are as follows:
+close, read, readline, truncate, write('string/txt'), seek(0)-->moves the pointer to the beginning of the file.
+code using these commands, 
+from sys import argv
+script, filename = argv
 
+print("we are gooing to delete this file {filename} using truncate")
+print("If you don't want to do that enter Ctrl-C")
+print("if you still want to coontinue press enter/return")
+input("?")
+text = open(filename, 'w')
+print("we are going to delete the contents in the file and not the file in itself")
+text.truncate()
+
+print("Now we will learn to add contents to the file")
+line1 = input("Type in the first line.")
+line2 = input("now the second line.")
+line3 = input("Now the final line.")
+
+#we need to write these lines into the filename
+
+text.seek(0)
+text.write(line1)
+text.write("\n")
+text.write(line2)
+text.write("\n")
+text.write(line3)
+
+#Now we read the file and print it.
+text.close()
+# I think once a file has been truncated we cannot read it using text.read() as it becomes unreadable.
+
+    ========= ===============================================================
+    Character Meaning
+    --------- ---------------------------------------------------------------
+    'r'       open for reading (default)
+    'w'       open for writing, truncating the file first
+    'x'       create a new file and open it for writing
+    'a'       open for writing, appending to the end of the file if it exists
+    'b'       binary mode
+    't'       text mode (default)
+    '+'       open a disk file for updating (reading and writing)
+    'U'       universal newline mode (deprecated)
+    ========= ===============================================================
+In the next exercise we get introduced to a new module, 
+exercise 17, more files:
+from os.path import exists, I think this is too check if a file exists which return True if the file exists.
+len function can be used to find the length of the string in the file i.e, len(text)
+from sys import argv
+from os.path import exists
+
+#moving content from one file to another
+script, filename1, filename2 = argv
+#first we read contents from filename1
+text = open(filename1)
+print("the content that needs to be moved is as follows\n", text.read())
+moving = text.read()
+
+#print(f"does the file exist {exists{filename2}}")
+#print("if yes then we omve the content else press Ctrl-C")
+txt = open(filename2, 'w')
+txt.write(moving)
+
+txt.close()
+text.close()
+
+this is where we are stopping for today
+
+
+
+ 
 
 
