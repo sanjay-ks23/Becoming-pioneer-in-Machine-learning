@@ -1,0 +1,81 @@
+After yesterday's mistake I can assure you I have learnt my lesson and will not be making the same in the upcoming days.
+A small recap would suffice I guess, strating from the sixth chapter, the book starts with strings and talked about format strings and their syntax, i.e, f"string {}", .format("string"/variable name) function
+and it goes on about printing strings and text inside the print function for the next four chapters then we reach the escape sequence chapter and also we were introduced to end=' ', which ends a string and continues the next one in the same line with the character given in end keyword.
+and finally chapter 10 talks about all the escape sequences in python.
+Now we shall move onto the asking question exercise, this is where we will start to get inputs form the user during runtime.
+and here comes input function, which as you would have known is pre-defined.
+#whenever input is called it asks for a input as the name suggests during runtime.
+code:
+print("how old are you")
+age = input()
+print("how heavy are you")
+weight = input()
+print("how tall are you")
+height = input()
+print(f"now the final sentence, I have a person who is {age} years old\nstanding at a height of {height} cm and weighs {weight} kg")
+also note, end = ' ', at the end of each print statement lets the compiler know not to move to the next lineor use a newline character.
+I am finding it difficult to segway form one chapter to another, exercise: 12, Prompting people,
+rewriting the previous code to prompt in the input function:
+#I wanted to try something out and it checks out, you cannot use any other keyword inside input, I thought of giving end=' ' inside input and got a syntax error.
+age = input("what is your age ?")
+height = input("what is your height ?")
+weight = input("what is your weight ?")
+print(f"now the final sentence, I have a person who is {age} years oldstanding at a height of {height} cm and weighs {weight} kg")
+Exercise 13: btw if I haven't mentioned this earlier I am planning on completing atleast 10 exercises today if not more.
+syntax for accepting arguments,
+and unpacking them onto mulitple variables together, i.e, 
+from sys import argv #the author have mentioned it as features from feature set to make our prog to do more.
+script, first, second, third = argv #this is the line that I was talking about
+print("the script is called:", script) and so on..
+from sys import argv #the author have mentioned it as features from feature set to make our prog to do more.
+script, first, second, third = argv #this is the line that I was talking about
+print("the script is called:", script)
+print(first)
+print(second)
+print(third)
+
+output:
+PS C:\Users\sanja\programming> python 1.py 1 2 3
+the script is called: 1.py
+1
+2
+3
+
+the first line in the code is not called features rather it is called as modules/libraries.
+i have usually called them libraries but the author prefers modules, I am letting him have his way with me.
+you get a value error when you pass lesser arguments in the terminal than expected.
+I just woke up from my chair to turn on the air con and huston we have a problem , leg day has started to show its symptoms.
+Today was good shoulder day, i still am fatigued.
+now onto the next exercise, prompting and passing, this basically uses argv and input together in a single script.
+nothing more to add , but I will write the code and also if you haven't noticed I am waiting eagerly to move onto the looping and other stuff.
+
+code:
+from sys import argv
+script, user_name = argv
+prompt = '--> '
+print(f"the name of the perosn who typed the {script} script is {user_name}")
+print("does that sound good ?")
+likes = input(prompt)
+print("where do you live {user_name} ?")
+location = input(prompt)
+print(f""" the person who types this script as we have mentioned before is {user_name}
+and he/she seems to {likes} it and they live in {location}.""")
+when we make a mistake in naming or calling a variabel using a diffferent name we get a NameError.
+We now move onto exercise 15, Reading files and I just had a bad feeling so i had to check and if statements start from chapter 29, 14 down only 15 more to, we shall complete by tomorrow, 
+code:
+from sys import argv
+script, filename = argv
+prompt = '>'
+text = open(filename)
+print(f"The content is the file, {filename} is as follows:")
+print(text.read())
+
+print("Enter the file name again")
+file_name = input(prompt)
+new_txt = open(file_name)
+print("The content is the same as we are just calling the same file again")
+print(new_txt.read())
+I am just going to save this and take a five min break.
+
+
+
