@@ -107,3 +107,5 @@ so formula here acts as a list and this list is later called using * to print th
 I feel a bit drowsy I think I am going to nap for a bit and then continue after my lunch in an hour
 
 Now onto the important parts, exercise 25, oh wait a min, it is titled "even more practice" I guess you know where this is going.
+oh wait they have introduced us to more functions to manipulate strings
+
