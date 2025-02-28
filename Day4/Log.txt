@@ -108,4 +108,46 @@ I feel a bit drowsy I think I am going to nap for a bit and then continue after 
 
 Now onto the important parts, exercise 25, oh wait a min, it is titled "even more practice" I guess you know where this is going.
 oh wait they have introduced us to more functions to manipulate strings
+we get introduced to sorted() function to sort a list of words passed into the function, split(' ') to split words in a sentence depending on the spaces, we can isolate and print any one word of the sentence using pop(), where pop(0) is the first character and this 1 gets incremented based on the position of the word in the sentence and also we use pop(-1) to point from the last words and move to the firsti.e, to move in reverse.
+def break_words(sentence):
+    words = sentence.split(' ')
+    return words
+
+def sort_words(words):
+    return sorted(words)
+
+def print_first_word(words):
+    first_word = words.pop(0)
+    return first_word
+
+def print_last_word(words):
+    last_word = words.pop(-1)
+    return last_word
+
+def sort_sentence(sentence):
+    words = break_words(sentence)
+    return sort_words(words)
+
+def print_first_and_last(sentence):
+    words = break_words(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+def print_first_and_last_sorted(sentence):
+    words = sort_sentence(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+and we import each of these function like we do for other modules/libraries, we go to the compiler and import the python file without the .py extension, then we call the necssary function like this,
+
+stringmanipulation.print_first_and_last_words(text), 
+if this return something then we assign this sentence to a variable.
+
+the next exercise the author asked us to rectify erros from a code and nothing more to it 
+Exercise 27 and 28, Memorizing logic and boolean practice, 
+alwasy remeber the keywords are 
+and, not, or, True, False . you will know why this is difficult if you first read c/c++ as you rfirst programming language.
+I have done around 3 hrours of programming today and completed from exercise 17 to 28, from now on we go into the technical stuff and the interesting part and only 10 more before starting leetcode ,array and string stuff.
+I might be back today after my workout if that is the case we will go on for another hour and try to complete this 34 today so we atleast start 39 tomorrow.
+
 
