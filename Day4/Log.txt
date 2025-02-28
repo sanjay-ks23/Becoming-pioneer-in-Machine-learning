@@ -1,0 +1,107 @@
+Good morning, the time right now is 10:54 and the date is 28/02/25, we are starting today with exercise 18, Names, variables, code and functions.
+This is where we enter into the fun stuff, Functions.
+code :
+def print_arg(*args):
+    arg1, arg2 = args
+    print(f"arg1:{arg1}, arg2:{arg2}")
+    
+def print_again(arg1, arg2):
+    print(f"arg1:{arg1}, arg2:{arg2}")
+ 
+def print_one(arg1):
+    print(f"arg1:{arg1}")
+
+def print_nothin():
+    print("I have got no value to print")
+
+print_arg("Sanjay", 1)
+print_again("Sruthi", 2)
+print_one("Only one arg to print")
+print_nothin()
+
+#I just wanted to work with the first function print_arg, because I jave never for the feeling of pointers in c while learning and had a hate for the * and &
+#So I juts wanted to get over my fear of them 
+#and also we get a feel for the function def syntax in this exercise.
+the * gets the input as a list and stores them in args
+
+Exercise 19:
+manipulating the argument value while calling them and stuff were taught in this exercise:
+def ticket_confirmation(name, booked, verified):
+    print(f"The ticket was booked by {name}")
+    print(f"was the ticket booked : {booked}")
+    print(f"was it verified : {verified}")
+print("Enter your name and whether the ticket was booked and was it verified accordingly")
+name = input()
+booking_status = input()
+verfication_status = input()
+ 
+ticket_confirmation(name, booking_status, verfication_status)
+ticket_confirmation("sruthi", "yes", "no")
+ticket_confirmation(name+"20", booking_status, verfication_status)
+
+Exercise 20, combining functions and files together,
+from sys import argv
+
+def print_content(f):
+    print(f.read())
+
+def move_cursor(f):
+    f.seek(0)
+
+def print_a_line(line_number, f):
+    print(f"{line_number} : {f.readline()}")
+
+script, file_name = argv
+
+text = open(file_name)
+print_content(text)
+move_cursor(text)
+line_number = 1
+print_a_line(line_number, text)
+print_a_line(line_number+1, text)
+print_a_line(line_number+2, text)
+#I have got to stop writing every code into this log and only the ones that are really necessary 
+
+So we got to use files along with functions and moreover how to increment a value, note, I have not incremented the value in my code, but the author explains it in the book.
+
+Exercise 21: we return values using functions:
+def add(a,b):
+    sum = a+b
+    return sum
+def difference(a,b):
+    diff = a - b
+    return diff
+def mulitply(a,b):
+    prod = a*b
+    return prod
+def division(a,b):
+    div = a/b
+    return div
+
+x = float(input("Enter the first value : "))
+y = float(input("Enter the next value : "))
+
+age = add(x,y)
+iq = difference(x,y)
+height = multiply(x,y)
+weight = division(x,y)
+
+print(f"there is perosn whose biodata reads as follows, age:{age}, height:{height}, weight:{weight}, iq:{iq}")
+
+exercise 22: What do we know so far?
+as th ename suggests, the author asks us to revise everything we have done so far.
+
+I am going to take a break now , It has exactly been one hour since I started today, I think it has been productive so far adn I have come to a conclusion that only after reaching chapter 40, am I allowed to even open leetcode.
+All i am going to say about exercise 23 is that it was a load of wass, even though it might be useful to know these i.e, encoding and deconding that strings have to undergo to preoce any meaning in the final bigger context 
+Moving onto exercise 24, More practice:
+this indeed uses all the concepts taught as of now in the first 23 chapters and combine them into a code for easier revision.
+this caught my eye the last line of the code is as follows:
+we know that we can use format strings in various syntax and one such sytax is using.format(arg) after the stringi.e,
+
+print(f" We'd have {}beans, {}jars,and {} crates.".format(*formula))
+where formula was previously defined as follows:
+formula = function_call(arg) and this function returns three values
+try to make note of this.
+so formula here acts as a list and this list is later called using * to print them in the statement.
+
+Now onto the important parts, exercise 25, oh wait a min, it is titled "even more practice" I guess you know where this is going.
