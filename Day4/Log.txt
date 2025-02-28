@@ -104,4 +104,6 @@ formula = function_call(arg) and this function returns three values
 try to make note of this.
 so formula here acts as a list and this list is later called using * to print them in the statement.
 
+I feel a bit drowsy I think I am going to nap for a bit and then continue after my lunch in an hour
+
 Now onto the important parts, exercise 25, oh wait a min, it is titled "even more practice" I guess you know where this is going.
