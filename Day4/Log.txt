@@ -149,5 +149,55 @@ alwasy remeber the keywords are
 and, not, or, True, False . you will know why this is difficult if you first read c/c++ as you rfirst programming language.
 I have done around 3 hrours of programming today and completed from exercise 17 to 28, from now on we go into the technical stuff and the interesting part and only 10 more before starting leetcode ,array and string stuff.
 I might be back today after my workout if that is the case we will go on for another hour and try to complete this 34 today so we atleast start 39 tomorrow.
+yellow I am back, we shall start with the exercise 29,
+WHAT IF:
+we are just going to write a code that utilizes three variables and comapre their values. with just the use of if function and no use of else in here.
+
+exercise 30, Yayyy!!!!!
+good number:
+in this exercise we will deal with the if and else, 
+we get introduced to the syntax of elif and else, elif is just else if together, we can use it as an intermediary until we reach the concluding else statement.
+and remember you dont need to write the statements inside if,else, and elif inside a parenthesis.
+i.e,
+if we need to compare two values.
+x = input()
+y = input()
+if x > y:
+   print("x is greater than y")
+elif x < y:
+   print("x is lesser than y")
+else:
+   print("They must be equal")
+In the next exercise which would be 31, Making decisions, we are introduced to if branches inside if branches, called as nested if condition. I am going to write this code and thats it for today.
+and we will start off fresh tomorrow after a quick recap.
+now the matter in hand,
+code:
+print("There are two doors in front of you, door 1 or 2, which would you like to enter? ")
+room = int(input())
+
+if room == 1:
+    print("There is a bear in front of you and you have to think on your feet",end=' ')
+    print("Is the bear in front of you a brown bear or black bear")
+    bear = input()
+    if bear == "brown":
+        print("You make yourself as big as possible")
+    elif bear == "black":
+        print("Prentent to have died")
+    else:
+        print("You couldn\'t tell the type of the bear, so you die")
+
+elif room == 2:
+    print("There are a bunch of keys and there are two doors in front of you, again")
+    print("But only one of the keys kits in anyone of the door, the only way possible is to brute force it as you have no prior knowledge about these door")
+    print("Select 1 or 2")
+    door = int(input())
+    if door == 1:
+        print("You have picked the wrong door and you die")
+    else:
+        print("You have managed to escape via {}, great success!!".format(door))
+else:
+    print("there are no other options , trying to malpractice has cost you your life, TATA")
+
+#always remember input only gets a string as an input so if comparing using equals to , it give an error , always remember to add int(input(), for every numerical input, this can be int or float, depending upon the scenario/situation.
 
 
