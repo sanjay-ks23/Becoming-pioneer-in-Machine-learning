@@ -56,3 +56,28 @@ while len(words) != 12:
 print(words)
 print('#'.join(words)) 
  I have typed this just to get a feel for string and list manipulation. I loved it so foar, the nxt execrise is all about dictionaries,
+I have wasted my time for quite a bit, I am going out today so I should probably get something done by then , so here I am . reading the next exercise and I will also be planning and designing a flowchart on the whole process step by  step.
+a discitonary in python is defined as follows :
+dict = {'1':'Sanjay','2':'Sruthi'....}, just like in every other language, they are called keys and values.it doesnt have to be strings can be anything and also note that they can be added like this , dict['3'] = 'harini'.
+we can delete stuff from dictionary too, using this syntax: del dict['2'], deleltes the key along with the value
+in dictionary everything has to do with mapping.
+to call every value/key from a dictionary and print them using looping, 
+the syntax is as follows:
+for state,abbrev in list(states.items()):
+         print(f"{state} is abbreviated as {abbrev}")
+note we use a function called items in here and we store it as a list before looping in it.
+
+I am not entirely sure about how the get() function works, so I am just going to write what i see
+variable = dict.get("Key"), now we use this variable to check if it was there using, 
+if not state:
+      print("Doesn't exist") as no value was initialized to it
+
+also giving a default values, 
+city  = cities.get('TX,'Doesn't exist')
+now when we call city it will print doesn't exist.
+Page number 163 for further clarification.
+
+This ends todays session for now, Let us see if I come home and continue probably not as there is macth after the concert.
+
+
+
