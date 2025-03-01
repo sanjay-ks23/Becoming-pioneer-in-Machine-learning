@@ -1,1 +1,58 @@
+Good morning, the time right now is 9:31 and the date is 9:32, I woke up at 6:30, did my morning rooutine, ate my breakfast and here I am.
+Now lets get into the interesting part of the book , Exercise 32, Loops and Lists,
+We got to use looping to manipulate a list that was created in the code and also we try to create a new list, now I am just going to see if i get it more clearly by creating a list but asking for the list_input during runtime.
 
+empty_list = []
+print("Enter the number of elements you want in the list")
+elements = int(input())
+for i in range(elements):
+    print(f"Enter the content that you would like in the {i}th position of the list")
+    value = input()
+    empty_list.append(value)
+print(len(empty_list))
+for i in range(len(empty_list)):
+    print(empty_list[i], end=' ')
+Next exercise we move onto While loops,Exercise 33,
+def looping(times):
+    empty_list = []
+    i=0
+    while i<times:
+        empty_list.append(i)
+        i += 1
+    return empty_list
+
+def main():
+    print("Enter the number of elements in the list")    
+    no_of_elements = int(input())
+    another_list = []
+    another_list = looping(no_of_elements)
+    print(another_list)
+
+main()
+
+The next exercise is about accessing the elements in the list, No:34
+         just talks about indexing in a list and the way it functions, list[i].
+
+Now, Exercise 35, Branches and functions:
+I am just going to go through the code wihtout typing i and if somethings seems unfamiliar I will probably type it in here or just write the code.
+It just predominantly talks about what I did in the previous exercises, using fucntions to acessing loops and if statements.
+but there is something new here ,
+a new module, 
+from sys import exit, exit(0), o is a nice way to exit whereas 1 will giveyou an error, it think it stops the compiling process and aborts the prog.
+I am sorry but this code is structured like shit, but i do get the point.
+Next we go to the exercise 36 and 37, Debugging and Designing and symbols. Therwe is nothing more to it, just what the name suggests, after a five min break , I will complete the next exercise .
+
+Next exercise 39 , I think i will end this sessionswith this exercise.
+the pop() fucntion in lists, will pop the last element in thelist and not the ifrst just like alinked list but will discuss it later. and we also got introduced to a new function called join, whose syntax is :
+' '.join(list[])# is used for printing stuff but it doesnt directky manipulate the string in  itself.
+string = "I am typing something that is 10 words long"
+words = string.split(' ')
+print("we define a new list so that we dynamicaaly add somehthing to the list to make it bigger")
+append_list = ['is','this','long','enough','for','you','to','be','happy']
+while len(words) != 12:
+    new_word = append_list.pop()
+    words.append(new_word)
+
+print(words)
+print('#'.join(words)) 
+ I have typed this just to get a feel for string and list manipulation. I loved it so foar, the nxt execrise is all about dictionaries,
