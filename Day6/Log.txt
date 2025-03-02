@@ -29,6 +29,8 @@ class Song(object):
         self.lyrics = lyrics
 
     def sing_me_a_song(self):
+
+exercise 41,42 still deals with the same stuff, going in a bit detail.
         for line in self.lyrics:
             print(line)
 happy_bday = Song(["Happy birthday to you",
