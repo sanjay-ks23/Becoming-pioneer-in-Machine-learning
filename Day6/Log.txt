@@ -6,3 +6,35 @@ Also I would like you to know that in the next book there are a lot of content f
 
 If you need motivation just remember, thi sis just like working out, initally it doesnt't look like much and as you get deep into the concepts you will surprise yourself with what you can do and how your perception and other perception of you changes.By just being consistent.
 Hope you don't forget this , similar to sculpting.
+
+now onto the next exercise: 40, Modules, classes and objects.
+He tried to explain the whole concept of modules/libraries using dictionaries , and surprisingly it did work and made the process easier , on how to call a objewct in a class and stuff like that and now using this he explains classes.
+
+a class is just a culumination of functions and variables, which are easily asseccible just like modules.
+for eg: the structure of a simple class is as follows:
+class MyStuff(object):
+      def __init__(self):
+          self.tangerine = "Heloo!!, I am a tangerine"
+      def apple(self):
+          print("This is just a function which prints stuff")
+Now we get to learn about object:
+       similar ot how a import acts for a module, a object is something that helps create a class and prvide access to it, 
+for eg: thing = Mystuff()
+Now to access the insides of a class we use the object or in this case thing.
+thing.apple()
+print(thing.tangerine)
+My first proper code using classes:
+class Song(object):
+    def __init__(self,lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+happy_bday = Song(["Happy birthday to you",
+"I don't want to get sued",
+"So I'll stop right there"])
+
+happy_bday.sing_me_a_song()
+
+
