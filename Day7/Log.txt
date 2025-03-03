@@ -1,0 +1,16 @@
+I have started the new text book and I am plannign on completing atleast 3 chapters by the end of the day, which will not be easy
+but it is what I am planningon doing, the book name is Data structures and algorithms in python by Dr. Goodrich T.
+The first chapter in the book is Pyhton primer, to get us familiar with the basics of python, which would be what I was doing the past week but I am willing to read the thing inorder to understand the authors way of interpreting the same stuff.
+In python and in solving programming problems we take particular interetst upon, list,set,dict baecause of ther mutability, that is the class can be called and the obejct once instantiated can be used to modify the values inside the said class, these methods are called mutators and the methods which are just for returning the object but not changing the state of it is accessors.
+Built in classes that cannot be modified are int,float,bool,tuple,str,frozenset
+In python to call the class , we call the constructor, for example in roder to use bool, bool().
+Int and Float, in python inorder to convert a string to interger it needs to have a base 10, if not it will produce a valueerror, the interesting part in this, in order to convert from one base to another, like octa, hexdecimal etc, we can just add another parameter to the int /float class, like int('7f',16), the 16 represents the base of the string in passed as the argument and it prints back the intger value for the same.
+in order to manipulate the decimal places in floating poitn we can use {variable_name:.2f}, this indendts the decimal places upto two and no more than that.
+There are avariety of object types in python, of the sequence types are: List, tuple, str(string).a tuple in python is delimited using(), whereas list [] and {} for sets.
+the next module in the chapter deals with the different types of operators.
+there are a plenty of sequence operators,
+s+t, conactenation os sequences.
+k*s, s+s+s+s...(k times)
+val in s (containment check)
+vale not in s
+s[start:stop:step], self explanatory.
