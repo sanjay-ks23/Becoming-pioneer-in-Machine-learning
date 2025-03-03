@@ -15,3 +15,15 @@ val in s (containment check)
 vale not in s
 s[start:stop:step], self explanatory.
 break, when called inside a loop, while terminate the immediately enclosing loop.continue causes the current iteration of the loop to stop.
+
+python conveniencies:
+expr1 if condition else expr2, for conditional statements.
+and now for looping statements and in particular for loops.
+list comprehension: 
+[expression for value in iterable if condition]
+squares = [k*k for k in range(1, n+1)], for printing a list of square numbers from 0 to n and adding them to a list. the if condition is optional.
+
+[k*k for k in range(1, n+1)]list comprehension
+{k*k for k in range(1, n+1)}set comprehension
+(k*k for k in range(1, n+1))generator comprehension
+{ k:k*k for k in range(1, n+1)}dictionary comprehension
