@@ -14,3 +14,4 @@ k*s, s+s+s+s...(k times)
 val in s (containment check)
 vale not in s
 s[start:stop:step], self explanatory.
+break, when called inside a loop, while terminate the immediately enclosing loop.continue causes the current iteration of the loop to stop.
