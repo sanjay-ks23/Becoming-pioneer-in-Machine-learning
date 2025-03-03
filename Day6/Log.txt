@@ -38,5 +38,6 @@ happy_bday = Song(["Happy birthday to you",
 "So I'll stop right there"])
 
 happy_bday.sing_me_a_song()
-
+I am pretty much done with this book , I just need to go over the class concepts one more time , as the last two exercises were easy to understand but I haven't practised the code yet to make myself confident.
+So i am just going to make a simple problem for my own class adn write a code for it.
 
