@@ -1,1 +1,10 @@
+We will strat of todays day with chapter 4, Recursion
+The factorial function, is usually denoted as follows: n!, now this equates to 1*2*3**.....n-1*n.
+In order to do this you can use a for loop to simple loop and multiply with itself increementing the value by 1 every single loop, or u use recursion ,
+using recursion , we call the function over and over again until the condition is met just like in a for loop.
+def factorial(n):
+    if n==0:
+       return 1
+    else:
+       return n*factorial(n-1)
 
