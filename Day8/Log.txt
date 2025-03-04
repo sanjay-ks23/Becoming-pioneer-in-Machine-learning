@@ -8,3 +8,30 @@ def factorial(n):
     else:
        return n*factorial(n-1)
 
+Taking about lists, sequence based classes in python, the running time of various opertaion are as follows:
+ Operation          RunningTime
+ len(data)          O(1)
+ data[j]            O(1)
+ data.count(value)  O(n)
+ data.index(value)  O(k+1)
+ value in data      O(k+1)
+ data1 == data2     O(k+1)
+ data[j:k]          O(k− j+1)
+ data1 + data2      O(n1+n2)
+ c*data             O(cn) 
+they are predominanlty linear as they have just one variable manipulating the time whereas for the follwing operations that is not the case:
+
+Operation                       RunningTime
+ data[j]=val                    O(1)
+ data.append(value)             O(1)∗
+ data.insert(k,value)           O(n−k+1)∗
+ data.pop()                     O(1)∗
+ data.pop(k)                    O(n−k)∗
+ deldata[k]
+ data.remove(value)             O(n)∗
+ data1.extend(data2)            O(n2)∗
+ data1+=data2
+ data.reverse()                 O(n)
+ data.sort()                    O(nlogn),
+the * near the running time suggest that they are amortized.?
+Mmeorize all this stuff as these are th eoperation that are usually sued when it comes to lists.
