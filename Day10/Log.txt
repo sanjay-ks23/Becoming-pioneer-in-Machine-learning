@@ -1,0 +1,4 @@
+Today we will start with stack, queue and deque and make sure we work problems in both chapters Array(List) and today's topics.
+We will begin with content of chapter 6 and when I get distracted I might  solve problems if not I will stop after reading the whole chapter, and the chapters is around 20 pages, so shouldn't take much .
+
+STCKS, QUEUES AND DEQUES:
