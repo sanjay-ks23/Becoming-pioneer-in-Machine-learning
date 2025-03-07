@@ -1,3 +1,16 @@
 I completed the Linked list chapter and left out the last case study parts, but tried to write the adt on my own in my notebook and did so sucessfully 
 Will be uploading all the problems that I solve on a daily basis.
 It might not be much but it is honest work.
+I am stARTING OFF WITH MAPS AND DICTIONARIES RIGHT NOW.
+I have previously written a lot about adts for all the other data types in my notebook, Now I will do the same for dictionaries,
+del M[k] to delete a map with the key k along with its value.
+iter(M), similar to for k in M
+considereing a dictionary names M, M.get(k,d=None), means: returns M[k] if k exists or else returns a defult value that has been implicity given insidde the object., M.setdefault(k,d) does the same thing as the previous funciton.
+M.pop(k,d=None), removes the item wiht key k form the map M and returns its associated value d
+M.popitem() does the same as del M[k],
+then we have M.clear()
+M.keys()
+M.values()
+M.items()
+M.update(M2)
+i HAVE TO GO THROUGH ALL THE STRING FUNCTIONS, LIKE ISALPHA() ETC.
