@@ -14,3 +14,31 @@ M.values()
 M.items()
 M.update(M2)
 i HAVE TO GO THROUGH ALL THE STRING FUNCTIONS, LIKE ISALPHA() ETC.
+In this chapter the final module consists of sets, I am going to go through it and make notes of it in the upcoming lines, but am yet to cover the rest of the topics in the chapter.
+we can call them using the collections class availablein python, 
+and call them using collections.MutableSet,
+the various functions available, predefined, are as follows:
+S.add(e) to add an element into the set 
+S.discard(e) to remove an element e from the set
+e in S
+len(S)
+iter(S)
+S.remove(e), does the same as S.discard but does return an error when there is no elemnt ie in the set, whereas discard does absolutely nothing.
+S.pop()
+S.clear()
+The next grp for comparison between two sets:
+ S==T: Return Trueif sets S and T have identical contents.
+ S!=T: Return True if sets S and T are not equivalent.
+ S <=T: Return Trueif set S is a subset of set T.
+ S < T: Return Trueif set S is a proper subset of set T.
+ S >=T: Return Trueif set S is a superset of set T.
+ S > T: Return Trueif set S is a proper superset of set T.
+ S.isdisjoint(T): Return True if sets S and T have no common elements.
+and finally, S|T union
+S|=T update set S to be an union of S and T
+S&T intersection
+S&=T similar to union.
+S^T, returns a symmetric differnce between S and T i.e, returns a set of elemnts that is in precisely one of the two sets.
+S-Treturns a new set that contains elements in Set S but not in T
+
+
