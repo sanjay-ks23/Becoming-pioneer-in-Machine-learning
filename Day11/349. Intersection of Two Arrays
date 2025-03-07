@@ -1,1 +1,11 @@
+This is my code that I intially typed in and submitted :
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        result = []
+        for i in range(len(nums1)):
+            if nums1[i] in nums2 and nums1[i] not in result:
+                result.append(nums1[i])
+        return result
+
+but apprently there is a more optimized way to solve the same and I looked at the solution, it was to use the & symbol and find the intersection.
 
