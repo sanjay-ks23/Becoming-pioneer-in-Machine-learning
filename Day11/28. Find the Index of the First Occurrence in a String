@@ -1,0 +1,14 @@
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        pattern = []
+        for i in range(len(haystack)):
+            pattern = haystack[i:i+len(needle)]
+            pattern = ''.join(pattern)
+            if pattern == needle:
+                return i
+            else:
+                pattern = []
+        return -1
+        
+This was my solution, it took my some time as this is my first time trying string based code, but the complexity of it was O(N*M)
+now onto the more efficient solution by refering to the solutions
