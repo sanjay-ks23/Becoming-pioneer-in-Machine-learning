@@ -11,4 +11,17 @@ class Solution:
         return -1
         
 This was my solution, it took my some time as this is my first time trying string based code, but the complexity of it was O(N*M)
-now onto the more efficient solution by refering to the solutions
+now onto the more efficient solution by refering to the solutions, 
+After watching the solution, I came across one solution that is good,
+Now the logic behind the code is somewhat similar, but inorder to reduce the time, 
+we can simple just loop from the start of the string, but not till the last of the string but we can stop however places before which will equate to the size of the needle variable.
+and also I dont need the join statement here,
+the finalized solution will be:
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        for i in range(len(haystack) - len(needle) + 1):
+            if haystack[i:i+len(needle)] == needle:
+                return i
+        return -1
+
+this is far more efficient.
