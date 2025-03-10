@@ -1,0 +1,14 @@
+class Solution:
+    def makeGood(self, s: str) -> str:
+        stack = []
+        
+        for i in range(len(s)-1,-1,-1):
+            if stack and stack[-1].lower() == s[i].lower() and ((stack[-1].islower() and s[i].isupper()) or stack[-1].isupper() and s[i].islower()):
+                stack.pop()
+                continue
+            else:
+                stack.append(s[i])
+        stack.reverse()
+        stack = ''.join(stack)
+        return stack
+            
