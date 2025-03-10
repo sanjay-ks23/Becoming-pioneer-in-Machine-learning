@@ -19,3 +19,19 @@ class Solution:
             return True        
 This was my first attempt at the code and I had 83/100 test cases pass, I am going to verify what went wrong and then try to make my code even better.
 I guess this is completely wrong because I tried to make the code better by making some changes and it went to 70/100, I am going to try again until I get a solution on my own and after 20-30 mins if I am still yet to come up with anything I am looking at the solutions.
+I am looking at the solution and will let you know where I went wrong:
+I am trying the same solution with the help of a map, 
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        mapping = {"}":"{",")":"(","]":"["}
+        for char in s:
+            if char in mapping.values():
+                stack.append(char)
+            elif char in mapping.keys():
+                if not stack or mapping[char] != stack.pop():
+                    return False
+        return len(stack) == 0
+
+Finally this is what I came across and tried to implement, the problem with the first code was I didnt properly understand the code, i thought they just had to be a pair and if the pair exist then it is well and good.
+another thing that i learnt from this code is the usage of maps to reduce the amount of conditional statements.
