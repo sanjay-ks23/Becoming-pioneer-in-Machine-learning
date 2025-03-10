@@ -11,4 +11,6 @@ class Solution:
         stack.reverse()
         stack = ''.join(stack)
         return stack
+This was my first attempt at solving this problem and all my testcases passed , but my solution was not the best it could have been, because it only beat 63.50 %
+but I will take this as my first W of the day.
             
