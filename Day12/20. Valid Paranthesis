@@ -1,0 +1,21 @@
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        for i in s:
+            if i in "{[(":
+                stack.append(i)
+            elif i == "}" and "{" in stack:
+                index = stack.index("{")
+                del stack[index]
+            elif i == "]" and "[" in stack:
+                index = stack.index("[")
+                del stack[index]
+            elif i == ")" and "(" in stack:
+                index = stack.index("(")
+                del stack[index]
+            else:
+                return False
+        if len(stack) == 0:
+            return True        
+This was my first attempt at the code and I had 83/100 test cases pass, I am going to verify what went wrong and then try to make my code even better.
+I guess this is completely wrong because I tried to make the code better by making some changes and it went to 70/100, I am going to try again until I get a solution on my own and after 20-30 mins if I am still yet to come up with anything I am looking at the solutions.
