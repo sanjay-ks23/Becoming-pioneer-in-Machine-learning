@@ -1,1 +1,26 @@
-
+class Solution:
+    def finalPrices(self, prices: List[int]) -> List[int]:
+        for i in range(len(prices) - 1):
+            for j in range(i+1,len(prices)):
+                if prices[j] <= prices[i]:
+                    prices[i] -= prices[j]
+                    break
+                else:
+                    continue
+        return prices
+I know this is a brute force approach to solve this problem , when we come across dp, i think I will be able to solve it without the O(n^2) complexity.
+but for now I am going to try to solve the problem again by using stacks. I have no clue where to include the logic of stacks in this problem.
+I have to try and understand monotonic stack, which I dont think I do, but I am going to write the code for it here anyway without any help for this problem:
+class Solution:
+def FinalPrices(self,prices:List[int]) -> List[int]:
+    #define and stack and a answer array to store the final value
+    stack = [] 
+    ans = [p for p in prices]
+    for i in range(len(nums),-1,-1):
+        while stack and prices[stack[-1]] >= prices[i]:
+             stack.pop()
+        if stack:
+           ans[i] -== prices[stack[-1]]
+        stack.append[i]
+    return ans
+This is one such problem that uses this methodology, I am going to solve something similar to make myself understand what it actually is.
