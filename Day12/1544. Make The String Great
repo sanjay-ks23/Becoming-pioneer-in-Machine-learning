@@ -14,3 +14,4 @@ class Solution:
 This was my first attempt at solving this problem and all my testcases passed , but my solution was not the best it could have been, because it only beat 63.50 %
 but I will take this as my first W of the day.
             
+One change I could make here is, traversing from the beginning instead of the last element, and also they better solutions used ASCII or ord to convert them and check the values, this reduces the reverse part of the code and also the number of conditional statements.
