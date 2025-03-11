@@ -4,3 +4,5 @@ Atleast 2 list questions, 2 string , 2 more stack , 4 queue question.
 
 Solved 2 hashmap questions, 2 string questions and 1 stack question
 started with a leetcode question, but it is solved using hashmap.so doesnt really make any sense
+
+Now I am planning on solving linked list questions.
