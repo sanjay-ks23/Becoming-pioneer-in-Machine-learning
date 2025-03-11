@@ -1,3 +1,6 @@
 Today I am going to complete hash maps and solve a few codes with it, but this time I am not going to learn from the book but rather use coding questions and learn from them and a few blogs.
 And also I am planning on solving 10 programming questions before I leave home. I am still yet to understand how to work with monotonic stacks, but stacks as a general I am fine with it.
 Atleast 2 list questions, 2 string , 2 more stack , 4 queue question.
+
+Solved 2 hashmap questions, 2 string questions and 1 stack question
+started with a leetcode question, but it is solved using hashmap.so doesnt really make any sense
