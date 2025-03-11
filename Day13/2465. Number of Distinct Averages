@@ -16,3 +16,4 @@ class Solution:
             else:
                 continue    
         return len(distinct)
+This was my first attempt at solving this problem, now I will be looking for a solution with two pointers
