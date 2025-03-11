@@ -1,0 +1,18 @@
+class Solution:
+    def distinctAverages(self, nums: List[int]) -> int:
+        avg = []
+        while nums:
+            minimum = min(nums)
+            maximum = max(nums)
+            i1 = nums.index(minimum)
+            del nums[i1]
+            i2 = nums.index(maximum)
+            del nums[i2]
+            avg.append((maximum+minimum)/2)
+        distinct=[]
+        for i in range(len(avg)):
+            if avg[i] not in distinct:
+                distinct.append(avg[i])
+            else:
+                continue    
+        return len(distinct)
