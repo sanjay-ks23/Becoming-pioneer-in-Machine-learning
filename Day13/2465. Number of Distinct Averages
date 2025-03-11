@@ -1,3 +1,4 @@
+
 class Solution:
     def distinctAverages(self, nums: List[int]) -> int:
         avg = []
@@ -17,3 +18,16 @@ class Solution:
                 continue    
         return len(distinct)
 This was my first attempt at solving this problem, now I will be looking for a solution with two pointers
+Now inorder to solve this using two pointers we can sort the array and remove the first and last element in thelist accordinly until nothing is left in the list.
+nums.sort()
+s = set()
+p1 = 0
+p2 = len(nums) - 1
+while p1<p2:
+minimum = nums[p1]
+maximum = nums[p2]
+s.add((minimum+maximum)/2)
+p1 += 1
+p2 -= 1
+return len(set)
+this is the two pointer solution without the indendations.
