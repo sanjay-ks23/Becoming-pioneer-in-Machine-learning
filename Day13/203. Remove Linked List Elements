@@ -1,1 +1,13 @@
 https://leetcode.com/problems/remove-linked-list-elements/solutions/4660724/easy-beginner-solution-with-dry-run-time-complexity-o-n-space-complexity-o-1-gits/?envType=problem-list-v2&envId=linked-list, I want you to look at this solution to understadn how to work with linked list in a particular case.
+class Solution:
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+        temp = ListNode(0)
+        temp.next = head
+        prev,curr = temp,head
+        while curr:
+            if curr.val == val:
+                prev.next =  curr.next
+            else:
+                prev = curr
+            curr = curr.next
+        return temp.next
