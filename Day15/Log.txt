@@ -1,3 +1,6 @@
 I have been gone for long time and reverted back to my past behaviours, I have to take responsibility, having been rejected from my 1st college, the next result will be out on 27th or something close to it.
 I am going to try and solve a few leetcode problems before leaving today.
 But I did study the tree chapter from the book.
+
+I solved two tree problems in leetcode and I have decided to hold off trees and graphs for now, as I wont be needing them in pure data science and machin learning streams.
+I am starting off with sorting and then searching this week and moving to algo design as soon as I complete these two.
