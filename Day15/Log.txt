@@ -4,3 +4,7 @@ But I did study the tree chapter from the book.
 
 I solved two tree problems in leetcode and I have decided to hold off trees and graphs for now, as I wont be needing them in pure data science and machin learning streams.
 I am starting off with sorting and then searching this week and moving to algo design as soon as I complete these two.
+
+Merge sort:
+Divide and Conquer:
+Always note that uisng recursion, to stop the loop we use a conditional statement
