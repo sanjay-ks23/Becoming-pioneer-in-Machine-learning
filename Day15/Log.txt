@@ -7,4 +7,4 @@ I am starting off with sorting and then searching this week and moving to algo d
 
 Merge sort:
 Divide and Conquer:
-Always note that uisng recursion, to stop the loop we use a conditional statement
+Always note that using recursion, to stop the loop we use a conditional statement
