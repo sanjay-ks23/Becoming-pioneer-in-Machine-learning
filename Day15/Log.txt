@@ -30,3 +30,8 @@ merge_sort(s1)
 merge_sort(s2)
 
 merge(s1,s2,s)
+
+we also saw how to sort two linked list which was actually a question in leetcode
+
+Quick sort:
+
